@@ -18,15 +18,15 @@
 
 			<target name="compile" depends="init">
 
-					<javac srcdir="demjenkins/src"
+					<javac srcdir="demjenkins/src" includeantruntime="false"
 						destdir="build/classes"/>
          
 
 				 </target>
 
-					<target name="jar" depends="compile" >
+					<target name="war" depends="compile" >
 
-					<jar destfile="build/jar/appl.jar" basedir="build/classes" />
+					<war destfile="build/jar/appl.jar" basedir="build/classes" />
 
 			</target>
 

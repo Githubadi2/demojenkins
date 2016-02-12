@@ -1,7 +1,7 @@
 
 
 <project name="FirstProject" default="dist">
-
+<!test-->
 	<target name="clean" >
 
 			<delete dir="build/classes"/>
@@ -24,9 +24,9 @@
 
 				 </target>
 
-					<target name="jar" depends="compile" >
+					<target name="war" depends="compile" >
 
-					<jar destfile="build/jar/appl.jar" basedir="build/classes" />
+					<war destfile="build/jar/appl.jar" basedir="build/classes" />
 
 			</target>
 
