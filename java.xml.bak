@@ -1,7 +1,7 @@
 
 
 <project name="FirstProject" default="dist">
-<!--test hello-->
+
 	<target name="clean" >
 
 			<delete dir="build/classes"/>
@@ -26,7 +26,7 @@
 
 					<target name="war" depends="compile" >
 
-					<war destfile="build/jar/appl.jar" basedir="build/classes" />
+					<war destfile="build/jar/appl.war" basedir="build/classes" needxmlfile='false' />
 
 			</target>
 
@@ -41,7 +41,7 @@
 
 			</target>
 
-		<target name="dist" depends="jar,copywebfiles">
+		<target name="dist" depends="war,copywebfiles">
 
 		   <zip destfile="dist/test.zip">
              <fileset dir="build/web"/>
