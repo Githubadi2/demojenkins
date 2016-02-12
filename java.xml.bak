@@ -1,7 +1,7 @@
 
 
 <project name="FirstProject" default="dist">
-
+<!-- test Hello -->
 	<target name="clean" >
 
 			<delete dir="build/classes"/>
