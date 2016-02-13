@@ -2,6 +2,9 @@
 
 <project name="FirstProject" default="dist">
 <!-- test Hello1 -->
+
+<!-- this is test build running in Jenkins-->
+
 	<target name="clean" >
 
 			<delete dir="build/classes"/>
